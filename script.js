@@ -7,4 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('content').style.display = 'block';
         playBirthdaySound();
     }, 3000);
+
+    function playBirthdaySound() {
+        const audio = new Audio('audio.mp3');
+        audio.play();
+    }
 });
